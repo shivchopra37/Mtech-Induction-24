@@ -56,3 +56,10 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.home .scroll-img{
+position: relative;
+top: 597px;
+width: 139px;
+height: 135px;
+left: 90px;
+}
