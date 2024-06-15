@@ -155,13 +155,13 @@ header {
     height: auto;
     position: relative;
     left: 27vw;
-    top: 9vh;
+    top: 35vh;
 }
 
 .other-speakers-page .greet-other-speakers-text{
     color: white;
     position: relative;
-    top: 10vh;
+    top: 34vh;
     left: 25vw;
     width: 52vw;
     font-size: xx-large;
@@ -184,6 +184,15 @@ header {
 .slider-container {
     width: 75vw;
     height: 35vh;
+    position: relative;
+    top: 12vh;
+    right: -14vw;
+  }
+
+  .slider-container-2 {
+    position: relative;
+    top: 37vh;
+    right: -14vw;
   }
   
   .slider {
@@ -198,6 +207,7 @@ header {
   
   .slide {
     min-width: 25%; /* Each slide takes up 25% of the container */
+    height: 45vh;
     box-sizing: border-box; /* Include padding and borders in the element's total width and height */
   }
   
