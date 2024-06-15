@@ -180,3 +180,53 @@ header {
     left: 27vw;
     top: 9vh;
 }
+
+.slider-container {
+    width: 75vw;
+    height: 35vh;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100%; /* Ensure the slider takes full width */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 25%; /* Each slide takes up 25% of the container */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+  }
+  
+  .slide img {
+    width: 100%; /* Make images stretch to fill the .slide */
+    height: auto; /* Keep image aspect ratio */
+  }
+  
+  /* Existing CSS */
+  
+  /* Add below */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0; /* Rounded corners for the left (prev) button */
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; /* Rounded corners for the right (next) button */
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
