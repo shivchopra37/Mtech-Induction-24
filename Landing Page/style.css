@@ -46,14 +46,14 @@ header {
     overflow: hidden;
 }
 
-.home img {
-    margin-top: 60px;
+.home .main-img {
+    /* margin-top: 60px; */
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    object-fit:fill; 
     transform: translate(-50%, -50%);
     z-index: -1;
 }
@@ -70,16 +70,15 @@ header {
     width:17vw;
     height: auto;
     position: relative;
-    top: 13vh;
-    left: 13vw;
+    top: 10vh;
+    left: 5vw;
 }
 
 .home .date-induction{
-    font-weight: bolder;
-    font-size: 4vw;
+    width: 20vw;
     position: relative;
-    top: 67vh;
-    left: 41vw;
+    top: 78vh;
+    left: 51vw;
 }
 
 .about {
@@ -90,12 +89,18 @@ header {
     overflow: hidden;
 }
 
-.about h1{
+/* .about h1{
     margin-left: 100px;
     margin-top: 150px;
     font-size: 60px;
     font-weight: bold;
     color: #151515;
+} */
+
+.about .welcome-iiitd{
+    width: 50vw;
+    margin-left: 6vw;
+    margin-top:10vh;
 }
 
 .about p{
@@ -105,17 +110,19 @@ header {
     margin-left: 100px;
     margin-top: 50px;
 }
-.about img{
+.about .iiitd-building{
     position: relative;
-    width: 98vh;
-    height: auto;
-    top:-40vh;
-    left:52vw;
+    width: 36vw;
+    height: 36vw;
+    top: -52vh;
+    left:59vw;
+    max-width: 540px;
+    max-height: 540px;
 }
 
 
 .keynote-speakers-page{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-color: #000;
 }
@@ -138,7 +145,7 @@ header {
 }
 
 .other-speakers-page{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-color: #000;
 }
@@ -158,4 +165,18 @@ header {
     left: 25vw;
     width: 52vw;
     font-size: xx-large;
+}
+
+.quote-used-page{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.quote-used-page .quoted-image{
+    width: 45vw;
+    height: auto;
+    position: relative;
+    left: 27vw;
+    top: 9vh;
 }
