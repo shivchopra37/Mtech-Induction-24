@@ -48,7 +48,21 @@ header {
 
 .heading-text .heading{
     position: relative;
-    height:100%;
-    width: 100%;
-    top: 70px;
+    height:95%;
+    width: 95%;
+    top: 55px;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.address .location .map{
+    top :70px;
+    position: relative;
+    height:70%;
+    width: 70%;
+    margin-left: 70px;
 }
