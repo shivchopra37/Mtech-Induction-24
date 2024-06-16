@@ -26,6 +26,7 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
+
 .logo {
     flex: 1;
     display: flex;
@@ -38,7 +39,10 @@ header {
     font-size: 21px;
     cursor: pointer;
 }
+
 .heading-text{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -46,7 +50,5 @@ header {
     position: relative;
     height:70%;
     width: 70%;
-    top: 50px;
-    margin: left 200px;
-    margin-right: 200px;
+    top: 70px;
 }
