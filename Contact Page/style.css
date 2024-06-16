@@ -52,6 +52,7 @@ header {
     width: 95%;
     top: 55px;
 }
+
 .address{
     display: flex;
     justify-content: center;
@@ -62,7 +63,38 @@ header {
 .address .location .map{
     top :70px;
     position: relative;
-    height:70%;
-    width: 70%;
+    height:80%;
+    width: 80%;
     margin-left: 70px;
+}
+
+.address .text{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    top: 70px;
+    position: relative;
+}
+
+.address.text h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.address.text p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .contact{
+    position: relative;
+    height: 70%;
+    width: 70%;
+    top: 70px;
 }
