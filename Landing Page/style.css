@@ -240,3 +240,66 @@ header {
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+
+.footer {
+    background-color: #B3FF52;
+    padding: 20px;
+    color: #000;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.footer-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact span {
+    display: inline-block;
+    width: 60px;
+    font-weight: bold;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-text, .footer-contact {
+        margin: 10px 0;
+    }
+}

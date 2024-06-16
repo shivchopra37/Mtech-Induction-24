@@ -4,6 +4,7 @@ document.getElementById('scroll-image').addEventListener('click', function(){
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
 });
 
+// Slider of the speakers
 
 let index = 0;
 function nextSlide() {
