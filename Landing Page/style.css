@@ -332,6 +332,10 @@ header {
 .footer-social i {
     font-size: x-large;
 }
+.footer-contact i{
+    margin-right: 1vw;
+    font-size: x-large;
+}
 
 @media (max-width: 768px) {
     .footer-content {
