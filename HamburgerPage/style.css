@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+}
+
+.hamburgerPage-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.hamburgerPage-container .cross-sign{
+    height: 5vh;
+}
+.hamburgerPage-container .main-container{
+    display: flex;
+    height:95vh;
+}
+.hamburgerPage-container .main-container .main-left-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+.hamburgerPage-container .main-container .main-left-side a{
+    text-decoration: none;
+
+}
+.hamburgerPage-container .main-container .main-left-side .Getintouch{
+    width: 60%;
+    height
+    margin-bottom:10vh;
+}
+.hamburgerPage-container .main-container .main-left-side .importanInfo{
+    width: 90%;
+    margin-bottom:10vh;
+}
+.hamburgerPage-container .main-container .main-left-side .contactHamburger{
+    width: 40%;
+    margin-bottom:10vh;
+}
+
+.hamburgerPage-container .main-container .main-right-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hamburgerPage-container .main-container .main-right-side .mtech-induction-sticker{
+    width: 15vw;
+    position: relative;
+    top: -4%;
+}
+
+.hamburgerPage-container .main-container .main-right-side .building-IIITD{
+    width: 25vw;
+}
+
