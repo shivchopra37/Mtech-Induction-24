@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color:#151515 ;
+    background-color:#1E1E1E ;
 }
 
 header {
@@ -56,24 +56,28 @@ header {
 .address{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    margin-top: 5vh;
 }
-
+.address .location{
+    margin:0 5vw;
+    margin-top: 5vh;
+    width: 50vw;
+    height: 30vw;
+}
 .address .location .map{
-    top :70px;
-    position: relative;
-    height:80%;
+    border-radius: 20px;
     width: 80%;
-    margin-left: 70px;
+    height:100%;
 }
 
 .address .text{
     color: white;
     text-align: left;
     padding: 10px;
-    top: 70px;
+    max-width: 30vw;
     position: relative;
+    right: 10vw;
 }
 
 .address.text h1 {
@@ -90,11 +94,46 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vw;
 }
 
 .contacts .contact{
+    /* position: relative; */
+    /* height: 70%; */
+    width: 69.27%;
+    height:75%;
+    margin-top: 15vh;
+    background-image: url(images/background-imp-contact.png);
+    border-radius: 23px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    /* top: 70px; */
+}
+.contacts .contact .top-portion{
+    width: 10vw;
     position: relative;
-    height: 70%;
-    width: 70%;
-    top: 70px;
+    top: -2.5%;
+}
+.contacts .contact .top-portion .hat{
+    width: 100%;
+}
+.contacts .contact .imp-contact{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom:7%;
+}
+.contacts .contact .contact-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-details{
+    width: 80%;
 }
