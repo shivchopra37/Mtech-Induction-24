@@ -137,3 +137,33 @@ header {
 .contact-details{
     width: 80%;
 }
+
+@media(max-width:400px){
+    .address .text{
+        font-size: x-small;
+        margin: 1em;
+        max-width: none;
+        right: 0px;
+    }
+    .address{
+        flex-direction: column;
+    }
+    .address .location{
+        width: 80vw;
+        height: 20vh;
+    }
+    .address .location .map{
+        width: 100%;
+    }
+}
+@media(max-height:400px){
+    .address .text{
+        font-size: x-small;
+        margin: 1em;
+        max-width: none;
+        right: 0px;
+    }
+    .address{
+        flex-direction: column;
+    }
+}
