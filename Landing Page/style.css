@@ -346,7 +346,7 @@ header {
     }
 }
 
-@media (max-width :400px){
+@media (max-width :800px){
     .home {
         height: 50vh;
     }
