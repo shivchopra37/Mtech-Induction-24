@@ -426,3 +426,39 @@ header {
         min-width: 49%;
     }
 }
+@media ((max-height:400px)){
+    .home {
+        height: 130vh;
+    }
+    .home .m-tech-logo{
+        top: 15vh;
+        
+    }
+    .home .main-img {
+      height: 130vh;
+    }
+    .home .date-induction{
+        top: 98vh;
+        left: 58vw;
+    }
+    .about{
+        height: 100%;
+    }
+    .keynote-speakers-page{
+        height:200vh;
+    }
+    .other-speakers-page{
+        height:220vh;
+    }
+    .quote-used-page{
+        height:200vh;
+    }
+    .slide{
+        height: 130vh;
+    }
+    .prev,.next{
+        top:170%;
+        
+    }
+
+}
