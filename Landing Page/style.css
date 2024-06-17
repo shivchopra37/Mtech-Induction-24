@@ -345,3 +345,84 @@ header {
         margin: 10px 0;
     }
 }
+
+@media (max-width :400px){
+    .home {
+        height: 50vh;
+    }
+    .home .main-img {
+      height: 50vh;
+    }
+    .home .m-tech-logo{
+        top: 8vh;
+        left: 15vw;
+    }
+    .home .date-induction{
+        top: 43vh;
+        left: 48vw;
+    }
+    .home .scroll-img{
+        display: none;
+    }
+    .about{
+        height: 50%;
+    }
+    .about .welcome-iiitd{
+        margin-top: 4vh;
+    }
+    .about p{
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 16px;
+    }
+    .about .iiitd-building{
+        display: none;
+    }
+    .keynote-speakers-page{
+        height:30vh;
+    }
+    .keynote-speakers-page .greet-keynote-speakers-text{
+        font-size: smaller;
+        width: 60vw;
+    }
+    .other-speakers-page{
+        height: 80vh;
+    }
+    .other-speakers-page .greet-other-speakers-text{
+        font-size: smaller;
+        width: 60vw;
+    }
+    .quote-used-page{
+        height: 50vh;
+    }
+    .footer .footer-down{
+        font-size: smaller;
+    }
+    .footer .footer-image .iiitd-logo{
+        width: 70vw;
+    }
+    .footer-contact{
+        top: -2vh;
+    }
+    .footer-contact i{
+        font-size: large;
+    }
+    .footer-social i{
+        font-size: large;
+    }
+    .footer-social{
+        top: 15vh;
+    }
+    .footer-content .footer-image .induction-24{
+        left: 2vw;
+    }
+    .prev,.next{
+        top: 15%;
+        padding: 3px 6px;
+        font: 9px;
+    }
+    .slide{
+        min-width: 49%;
+    }
+}

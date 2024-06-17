@@ -112,3 +112,57 @@ function initializeSlider2() {
   }
   // Add any other initialization logic here
 }
+
+let index3 = 0;
+function nextSlide3() {
+  const slides = document.querySelector('.slides-3');
+  const slideWidth = slides.children[0].offsetWidth;
+  const viewportWidth = slides.offsetWidth;
+  const numSlidesThatFit = Math.floor(viewportWidth / slideWidth);
+
+  index3 = (index3 + 1) % slides.children.length;
+  slides.style.transform = `translateX(-${index3 * slideWidth}px)`;
+
+  // Adjusted condition to hide the Next button
+  if (index3 >= slides.children.length - numSlidesThatFit) {
+    document.querySelector('.next-3').style.display = 'none';
+  } else {
+    document.querySelector('.next-3').style.display = 'block';
+  }
+
+  // Make the Prev button visible if we move away from the first slide
+  if (index3 > 0) {
+    document.querySelector('.prev-3').style.display = 'block';
+  }
+}
+
+function prevSlide3() {
+  const slides = document.querySelector('.slides-3');
+  const slideWidth = slides.children[0].offsetWidth;
+  const viewportWidth = slides.offsetWidth;
+  const numSlidesThatFit = Math.floor(viewportWidth / slideWidth);
+
+  if (index3 > 0) {
+    index3 = (index3 - 1) % slides.children.length;
+    slides.style.transform = `translateX(-${index3 * slideWidth}px)`;
+  }
+
+  // Update the visibility of the Prev button
+  if (index3 === 0) {
+    document.querySelector('.prev-3').style.display = 'none';
+  } else {
+    document.querySelector('.prev-3').style.display = 'block';
+  }
+
+  // Ensure the Next button is visible when going back, unless it's the last slide
+  if (index3 < slides.children.length - numSlidesThatFit) {
+    document.querySelector('.next-3').style.display = 'block';
+  }
+}
+// Call this function when initializing your slider to ensure the Prev button is initially hidden if the first slide is shown
+function initializeSlider3() {
+  if (index3 === 0) {
+    document.querySelector('.prev-3').style.display = 'none';
+  }
+  // Add any other initialization logic here
+}
