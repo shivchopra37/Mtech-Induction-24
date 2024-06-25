@@ -10,13 +10,24 @@
 <body>
     <div class="hamburgerPage-container">
         <div class="cross-sign">
-            <a href="../Landing Page/index.html" style="text-decoration: none;">
-            <i class="fa-solid fa-xmark" style="font-size: larger;color: #787878;"></i>
+            <a id="backLink" href="#" style="text-decoration: none;">
+            <i class="fa-solid fa-xmark" style="font-size:xx-large ;color: #787878;margin-top: 4px;margin-left: 4px;"></i>
             </a>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var backLink = document.getElementById('backLink');
+                    if (document.referrer) {
+                        backLink.href = document.referrer; // Dynamically set the href to the referrer URL
+                    } else {
+                        backLink.href = '../Landing Page/index.html'; // Default back to the index if there's no referrer
+                    }
+                });
+                </script>
         </div>
         <div class="main-container">
             <div class="main-left-side">
                 <a href="../Contact Page/index.html">
+                    
                 <img src="GET IN TOUCH.png" alt="" class="Getintouch">
             </a>
             <a href="../Important Info Page/index.html">
