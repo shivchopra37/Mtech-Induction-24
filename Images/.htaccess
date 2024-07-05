@@ -1,4 +1,4 @@
-SetEnvIf Referer "sa4444-xyz.stackstaging.com/" allowed_referrer
+SetEnvIf Referer "sa4444-xyz.stackstaging.com" allowed_referrer
 Order Deny,Allow
 Deny from all
 Allow from env=allowed_referrer
