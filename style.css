@@ -214,7 +214,7 @@ header {
   }
   
   .slide img {
-    width: 100%; /* Make images stretch to fill the .slide */
+    width: 75%; /* Make images stretch to fill the .slide */
     height: auto; /* Keep image aspect ratio */
   }
   
